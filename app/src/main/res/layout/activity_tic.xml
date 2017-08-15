@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.rohit222gmail.t.k.nowin.TIcActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginBottom="5dp"
+        android:layout_width="240dp"
+        android:layout_height="220dp"
+        app:srcCompat="@drawable/homeside"
+        tools:layout_editor_absoluteX="354dp"
+        tools:layout_editor_absoluteY="480dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/one"
+        android:tag="1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/bottom_right"
+        android:textSize="60dp"
+        android:onClick="player"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/two"
+        android:tag="2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/left_bottom_right"
+        android:textSize="60dp"
+        android:onClick="player"
+        android:layout_alignBottom="@+id/one"
+        android:layout_toRightOf="@+id/one"
+        android:layout_toEndOf="@+id/one" />
+
+    <Button
+        android:id="@+id/three"
+        android:tag="3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/left_bottom"
+        android:textSize="60dp"
+        android:onClick="player"
+        android:layout_alignBottom="@+id/two"
+        android:layout_toRightOf="@+id/two"
+        android:layout_toEndOf="@+id/two" />
+
+    <Button
+        android:id="@+id/four"
+        android:tag="4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/top_right_bottom"
+        android:textSize="60dp"
+        android:onClick="player"
+        android:layout_below="@+id/one"
+        android:layout_alignLeft="@+id/one"
+        android:layout_alignStart="@+id/one" />
+
+    <Button
+        android:id="@+id/five"
+        android:tag="5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/top_right_bottom_left"
+        android:textSize="60dp"
+        android:onClick="player"
+        android:layout_below="@+id/two"
+        android:layout_toRightOf="@+id/one"
+        android:layout_toEndOf="@+id/one" />
+
+    <Button
+        android:id="@+id/six"
+        android:tag="6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/top_left_bottom"
+        android:textSize="60dp"
+        android:onClick="player"
+        android:layout_below="@+id/three"
+        android:layout_toRightOf="@+id/five"
+        android:layout_toEndOf="@+id/five" />
+
+    <Button
+        android:id="@+id/seven"
+        android:tag="7"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/top_right"
+        android:textSize="60dp"
+        android:onClick="player"
+        android:layout_below="@+id/four"
+        android:layout_alignLeft="@+id/four"
+        android:layout_alignStart="@+id/four" />
+
+    <Button
+        android:id="@+id/eight"
+        android:tag="8"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/left_top_right"
+        android:textSize="60dp"
+        android:onClick="player"
+        android:layout_alignBottom="@+id/seven"
+        android:layout_toRightOf="@+id/four"
+        android:layout_toEndOf="@+id/four" />
+
+    <Button
+        android:id="@+id/nine"
+        android:tag="9"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/top_left"
+        android:textSize="60dp"
+        android:onClick="player"
+        android:layout_alignBottom="@+id/eight"
+        android:layout_toRightOf="@+id/five"
+        android:layout_toEndOf="@+id/five" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:background="#fff"
+        android:textSize="40dp"
+        android:onClick="reset"
+        android:text="RESET"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignLeft="@+id/status"
+        android:layout_alignStart="@+id/status"
+        android:layout_marginTop="37dp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:text="Try to Beat Me !" />
+
+</RelativeLayout>
